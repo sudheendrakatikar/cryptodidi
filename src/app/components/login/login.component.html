@@ -1,0 +1,48 @@
+<div class="container">
+  <div class="row">
+
+    <div class="col-md-4">
+    </div>
+
+    <div class="col-md-4">
+
+      <mat-card>
+        <h2 class="page-header">Sign In</h2>
+        <form>
+          <mat-form-field>
+            <input type="text" matInput [(ngModel)]="username" name="username" placeholder="Username" required>
+          </mat-form-field>
+          <br>
+          <mat-form-field>
+            <input type="password" matInput [(ngModel)]="password" name="password" placeholder="Password" required>
+          </mat-form-field>
+          <br>
+          <mat-checkbox>Remember me</mat-checkbox>
+          <br><br>
+          <button mat-raised-button color="primary" type="submit">Go</button>
+        </form>
+        <br><br>
+        <p align="center">OR</p>
+        <div align="center">
+          <a href="javascript:void(0)" matTooltip="Google">
+            <img src="../../../assets/googleplus.png">
+          </a>
+          <a href="javascript:void(0)" matTooltip="Facebook">
+            <img src="../../../assets/facebook.png">
+          </a>
+          <a href="javascript:void(0)" matTooltip="Twitter">
+            <img src="../../../assets/twitter.png">
+          </a>
+          <a href="javascript:void(0)" matTooltip="GitHub">
+            <img src="../../../assets/github.png">
+          </a>
+        </div>
+        <hr>
+        Don't have an account? <a routerLink="../register">Create one.</a>
+      </mat-card>
+    
+    <div class="col-md-4">
+    </div>
+
+  </div>
+</div>
